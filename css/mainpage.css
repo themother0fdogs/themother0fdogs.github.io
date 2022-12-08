@@ -1,0 +1,116 @@
+body {
+    color: #ffffff;
+    background-image: linear-gradient(#607a86, #232e33);
+    background-attachment: fixed;
+    }
+
+  
+    .container {
+        position: relative;
+        width: 70%;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+      }
+      
+     
+      .container img {
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      
+      .container .btn {
+        position: absolute;
+        top: 62%;
+        left: 81%; 
+        width: 30%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #232e33;
+        color: white;
+        border-radius: 18px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+       
+      }
+      
+    .container .btn:hover {
+        background-color: #41535b;
+        color: white;
+        box-shadow: 10px 10px 10px #222222;
+      }    
+
+    #main{ display:block;}
+    #mobile{display:none;}
+
+    .button{
+       display:none;
+     }
+
+
+
+    
+
+
+ @media screen and (max-width: 600px)
+ {
+    #main{ display:none;}
+    #mobile{display:block;}
+    img{
+        width: 100vw;
+        
+  }
+  .container .btn{
+      display: none;
+  }
+
+
+  .container img {
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .button{
+    background-color: #232e33;
+    color: white;
+    font-size:20px;
+    border-radius: 18px;
+    padding: 13px 30px;
+    text-align: center;
+    display: block;
+    margin: 5px 5px 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.button:link, .button:visited, .button:active{
+    color:white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #41535b;
+    color: white;
+    box-shadow: 10px 10px 10px #222222;
+}
+
+ }
