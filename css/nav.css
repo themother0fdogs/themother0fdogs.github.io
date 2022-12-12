@@ -1,7 +1,6 @@
 .navigation li a {
     display: inline-block;
     text-decoration: none;
-    float: right;
   }
   .navigation li {
     display: inline-block;
@@ -15,7 +14,6 @@
   .topnav {
       background-color: #232e33;
       overflow: hidden;
-      font-size: 20px;
       width: 980px;
       margin: auto;
     }
@@ -25,7 +23,7 @@
       display:block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 10px 10px 20px 10px;
       text-decoration: none;
       font-size: 20px;
       font-family: Arial;
@@ -35,12 +33,75 @@
       background-color: #41535b;    
       color: white;
     }
-
-    
+  
     .topnav .icon {
       display: none;
     }
 
+    .container {
+      position: relative;
+      width: 980px;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+    }
+    
+   
+    .container img {
+      width: 980px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container .navgit {
+      position:absolute;
+        top: 65%;
+        left: 90%; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container .navlinked {
+      position:absolute;
+        top: 65%;
+        left: 95%; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+     .container a:hover {
+      background-color: #41535b;    
+      color: white;
+      padding: 10px;
+
+    }
+
+    .topnav-icons a {
+      color: white;
+      padding: 14px 14px;
+      text-decoration: none;
+    }
+    
+    .topnav-icons a:hover {
+      background-color: #41535b;    
+      color: white;
+      padding-top: 20px;
+    }
 
 
 @media screen and (max-width: 900px){
@@ -51,12 +112,15 @@
       .topnav a {
         float: left;
       }
+
+   
      
     }
 
     
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 820px) {
     .topnav a:not(:active) {display: none;}
+
     .topnav a.icon {
       float: right;
       display: block;
@@ -73,6 +137,60 @@
       padding: 0px 0px 10px 0px;
       text-align: center; 
     }
+
+    .topnav-icons{
+      position: absolute;
+      top:45px;
+      right:10px;
+    }
+
+   
+    .container {
+      position: relative;
+      width: 100%;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+    }
+    
+   
+    .container img {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container .navgit {
+      position:absolute;
+        top: 80%;
+        left: 85%; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container .navlinked {
+      position:absolute;
+        top: 80%;
+        left: 95%; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
   }
   
   @media screen and (max-width: 600px) {
@@ -87,6 +205,8 @@
       display: block;
       text-align: left;
     }
+    
+
   }
  
 

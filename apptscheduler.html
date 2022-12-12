@@ -11,7 +11,10 @@
 </head>
 
 <body>
+  <div class="container">
     <img src = "photos/header2.jpg" alt ="header" class="center">
+   <a href="https://github.com/themother0fdogs" target="_blank" rel="noopener noreferrer" class="navgit"><i class="fa fa-github fa-2x"></i></a>
+  <a href = "https://www.linkedin.com/in/lynh-casidy/" target="_blank" rel="noopener noreferrer" class="navlinked"><i class="fa fa-linkedin" style="font-size:30px" ></i></a></div>
     <div class="topnav" id="myTopnav">
       <nav class = "navigation">
       <ul>
@@ -30,4 +33,46 @@
       <script src="javascript/nav.js"></script>
 
     </ul>
+
+     
+    <div class = "content">
+      <br><h1>Appointment Scheduler Desktop Application</h1>
+
+      <u>Overview</u> 
+      <br>This desktop application allows users to view customer records and appointment schedules for each specific contact of a global consulting company.
+      The company has offices in the United States, the United Kingdom, and Canada; therefore, the company has to have appropriate language settings in English and French for the French-Canadian speakers.
+      When launching the application, a login form is shown in either English or French, depending on the user's language settings on their computer. The form also displays the user's general location 
+      and records the login activity in a text file of the username used, whether it failed or succeeded, and the time and date of attempt. If the attempt succeded, another notification will pop-up
+      to display if there are any upcoming appointments within the 15 minutes of logging in. 
+      
+      <p>From then, the user has the option to look at customer records or appointments.
+      The records and appointments are pulled from a database in MySQL Workbench. For the customer records, users can add, update, or delete customer information. 
+      If a user tries to delete a customer that has an appointment associated with them, an error message will display stating that the user must delete the appointment before deleting the customer.
+      
+      <p>For the appointment portion, users can add, update, or delete appointment information and they can also
+      filter through the list by current month, current week, and by contact. The appointment form also provides a total number of appointments based on type and month that the user selects 
+      and the total of the customer appointments by a selected contact name. 
+
+      <p>When deleting an appointment or customer, a new screen pops up displaying the selected appointment/customer to be deleted and asks the user for confirmation. If any fields are left empty
+      in the add or update forms or the user enters a non-existing customer ID or user ID, an error message will display.
+      To conclude, when the user edits the customer or appointment, the records are also updated in MySQL Workbench.
+
+      <br><br><u>Tools</u> 
+      <br>&#9679 Intellij IDEA Community Edition 2021.1.3x64
+      <br>&#9679 JDK - Java SE 11.0,15.1
+      <br>&#9679 JavaFX - JavaFX-SDK-17.0.1
+      <br>&#9679 SceneBuilder
+      <br>&#9679 MySQL Workbench 8.0 CE
+
+      <br><br><u>Language(s)</u> 
+      <br>&#9679 Java
+      <br>&#9679 SQL
+      <br><br><a href="https://github.com/themother0fdogs/SchedulingAndRecords_DesktopApp" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a> 
+
+      
+      <br><h2>Project Output</h2>
+  <br>VIDEO
+  <br><br><a href="website.html" class="button">&#9665; My Website</a> <a href="bikeinventory.html" class="button">Bike Inventory Management System &#9655;</a> 
+
+  </div>
 </body>
