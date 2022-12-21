@@ -103,6 +103,9 @@
       padding-top: 20px;
     }
 
+    #main{ display:block;}
+    #mobile{display:none;}
+
 
 @media screen and (max-width: 900px){
     .topnav{
@@ -190,6 +193,8 @@
         border: none;
         cursor: pointer;
     }
+    #main{ display:none;}
+    #mobile{display:block;}
 
   }
   

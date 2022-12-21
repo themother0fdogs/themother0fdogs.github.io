@@ -69,47 +69,83 @@ h3{
     box-shadow: 10px 10px 10px #222222;
 }
 
-.career-container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    align-content: right;
-}
-
-.careerphotos {
-    display: none;
-  }
-
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  .art-container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    align-content: left;
-
-}
-.artphotos {
-    display: none;
-  }
-
-.artfade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 980px;
   }
-  
 
+.art-container {
+  max-width: 1000px;
+  position: relative;
+  text-align: center;
+}
+
+.artphotos {
+  display: none;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 30%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 30%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: inline-block;
+  bottom: 8px;
+  width: 100%
+}
   
 @keyframes fade {
     from {opacity: .4} 
@@ -138,6 +174,14 @@ h3{
     img{
           width: 100%
           ;
+    }
+    .next {
+      right: 0;
+   
+    }
+    .prev {
+      left: 0;
+  
     }
 
  }

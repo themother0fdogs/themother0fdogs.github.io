@@ -1,30 +1,33 @@
-var slideIndex = 0;
-                carousel();
-                
-                function carousel() {
-                  var i;
-                  var slides = document.getElementsByClassName("careerphotos");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                
-                  slides[slideIndex-1].style.display = "block";  
+let slideIndex = 1;
+showSlides(slideIndex);
 
-                  setTimeout(carousel, 5000); 
-                }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-                var slideIndex2 = 0;
-                carousel2();
-                function carousel2() {
-                  var i;
-                  var slides2 = document.getElementsByClassName("artphotos");
-                  for (i = 0; i < slides2.length; i++) {
-                    slides2[i].style.display = "none";  
-                  }
-                  slideIndex2++;
-                  if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
-                  slides2[slideIndex2-1].style.display = "block";  
-                  setTimeout(carousel2, 5000); 
-                }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("artphotos");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
