@@ -1,8 +1,10 @@
 # themother0fdogs.github.io
 TITLE:
+
 My Portfolio Website
 
 PURPOSE:
+
 I created this website to display my resume, work experience, and skills for prospecting employers. 
 Being new into software development and IT in general, I wanted to be able to show that I have the capability 
 to learn how to do something I've never done before. I learned how to use GitHub pages to host my own website. 
@@ -12,6 +14,7 @@ Website link: https://lynhcasidy.com
 
 
 TOOLS:
+
 Visual Studio Code
 
 GitHub Pages
