@@ -62,6 +62,7 @@ body {
     #mobile{display:block;}
     img{
         width: 100vw;
+        padding-top: 100px;
   }
  
   .container .btn{
