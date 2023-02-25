@@ -56,18 +56,14 @@ body {
      }
 
 
-
-    
-
-
  @media screen and (max-width: 600px)
  {
     #main{ display:none;}
     #mobile{display:block;}
     img{
         width: 100vw;
-        
   }
+ 
   .container .btn{
       display: none;
   }
