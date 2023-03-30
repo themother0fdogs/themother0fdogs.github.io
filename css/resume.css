@@ -17,8 +17,6 @@ body {
     width: 980px;
   }
 
-  #main{ display:block;}
-  #mobile{display:none;}
 
 
  @media screen and (max-width: 700px)
@@ -29,8 +27,6 @@ body {
 }
 @media screen and (max-width: 900px)
 {
-  #main{ display:none;}
-  #mobile{display:block;}
   img{
       width: 100vw;}
 
