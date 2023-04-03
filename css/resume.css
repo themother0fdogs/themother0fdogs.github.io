@@ -1,6 +1,6 @@
   
   .topnav a.active {
-    background-color: #1D3251; 
+    background-color: #607a86; 
     color: white;
   }
 
@@ -17,7 +17,31 @@ body {
     width: 980px;
   }
 
+  .button{
+    background-color: #232e33;
+    color: white;
+    border-radius: 18px;
+    padding: 13px 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px ;
+    cursor: pointer;
+ 
+}
 
+.button:link, .button:visited, .button:active{
+    color:white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #41535b;
+    color: white;
+    box-shadow: 10px 10px 10px #222222;
+}
+
+#main{ display:block;}
+#mobile{display:none;}
 
  @media screen and (max-width: 700px)
  {
@@ -27,6 +51,9 @@ body {
 }
 @media screen and (max-width: 900px)
 {
+  #main{ display:none;}
+  #mobile{display:block;}
+
   img{
       width: 100vw;}
 
@@ -40,6 +67,7 @@ body {
        padding: 13px 20px;
         font-size: 16px;
     }
+
 
     .center {
        display: block;
