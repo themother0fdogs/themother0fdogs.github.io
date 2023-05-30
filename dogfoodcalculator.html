@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset= "UTF-8"/>    
+<link rel= "stylesheet" type ="text/css" href="css/portfolio.css"/>
+<link rel= "stylesheet" type ="text/css" href="css/nav.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name = "viewport" content ="witdth=device-width, initial-scale=1">
+<title>Raw Dog Food Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <img id="main" src = "photos/header2.jpg" alt ="header" class="center">
+        <img id="mobile" src = "photos/mobileheader.jpg" alt ="header" class="center">
+   <a href="https://github.com/themother0fdogs" target="_blank" rel="noopener noreferrer" class="navgit"><i class="fa fa-github fa-2x"></i></a>
+  <a href = "https://www.linkedin.com/in/lynh-casidy/" target="_blank" rel="noopener noreferrer" class="navlinked"><i class="fa fa-linkedin" style="font-size:30px" ></i></a></div>
+    <div class="topnav" id="myTopnav">
+      <nav class = "navigation">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="resume.html">Resume & Certifications</a></li>
+      <li><a href="portfolio.html">Portfolio</a>  </li>
+      <li><a href="contact.html">Contact</a></li>
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      </nav>
+
+      <script src="javascript/nav.js"></script>
+
+    </ul>
+
+    <div class = "content">
+      <br><h1>Raw Dog Food Calculator</h1>
+      <img src="photos/dogfoodcalc.jpg" ALIGN="right" width = "300px"> 
+      
+      <u>Overview</u> 
+      <br> With my veterinary technician experience and passion for animal nutrition, I wanted to create a desktop application that would 
+      easily calculate meal plans for dogs. This project takes user input and creates a meal plan based on the dog's current and goal weights.
+      There is also an entry box for users to input their pet's name. 
+      If the user doesn't input a valid number in the weight entry box, an error screen will pop-up.
+      Multiple windows can be displayed if pet parents wanted to create plans for multiple dogs or if they wanted to compare meal plans based on weight.
+      Having the ability to display multiple windows on the screen makes it easier for owners to prepare their grocery lists. 
+      The program also provides users with the ability to choose between using pounds/ounces or kilograms/grams.
+
+      <br><br>There is a lot of math and science that goes into creating a balanced meal plan for dogs.
+      I also work with my veterinarian in creating balanced meal plans for my dogs.
+      To maintain the current dog's weight, the meal weight would be 2.5% of their weight. 
+      To gain weight, the meal weight would be 3% of their weight.
+      To lose weight, the meal weight would be 2% of their weight. 
+      My calculations follow the 80/10/5/5 rule where 80% of the meal weight would be muscle meat,
+      10% would be bone content, 5% would be liver, and 5% would be a second secreting organ of the owner's choice.
+      This program makes it easy for raw-feed owners because it automatically calculates the meal percentages for the user.
+
+      <br><br><u>Takeaway</u>
+      <br>This is my first desktop program that involved creating a GUI in Python. This was a fun project for me because 
+      I have always wanted a calcuator program that would allow me to display two different meal plans since I have two dogs. 
+      Currently, the calculators online don't give me the option to display two windows unless I open a whole new tab in my browser and inputing the other dog's information.
+      Since this was my first time using Tkinter to create a GUI, I had a bit of trouble with understanding how the grid worked.
+      I couldn't get my windows to display the grid widget along with a small blurb about secreting organs at the bottom of the grid.
+      I found out that my problem was that I was trying to use pack() and grid() together on the widget, which was not possible. As a solution, I added the blurb as a part of the grid
+      and changed the column span for that cell only.
+
+     <br><br><u>Tools</u> 
+      <br>&#9679 PyCharm Community Edition 2022.3.3
+      <br>Tkinter
+
+      <br><br><u>Language(s)</u> 
+        <br>&#9679 Python 3.11
+
+        
+    <br><br><a href="https://github.com/themother0fdogs/raw_dog_food_calculator" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a> 
+
+
+      <br><h2>Project Output</h2>
+      <video width = "740" height= "440" controls>
+        <source src= "videos/dogfoodcalcvid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+    <br><br><br>Output of the Two Calculations 
+    <br><img src="photos/dogscreenshot.jpg">
+  
+
+  <br><br><a href="atm.html" class="button">&#9665; ATM Selections</a> <a href="website.html" class="button">My Website &#9655;</a> 
+</div>
+
+</body>
